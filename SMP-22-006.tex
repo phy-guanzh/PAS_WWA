@@ -11,16 +11,16 @@
 \newcommand{\gbarrel}{\gamma_{\text{barrel}}}
 \newcommand{\gendcap}{\gamma_{\text{endcap}}}
 \newcommand{\dphizgjj}{\Delta \phi_{\PZ\gamma,\mathrm{jj}}}
-\newcommand{\mTH}{\ensuremath{\mT^{\PH}}\xspace}
-\newcommand{\mTltwo}{\ensuremath{\mT^{\ell_{2}}}\xspace}
-\newcommand{\ptvecll}{\ensuremath{\ptvec^{\ell\ell}}\xspace}
-\newcommand{\ptll}{\ensuremath{\pt^{\ell\ell}}\xspace}
-\newcommand{\dphill}{\ensuremath{\Delta\phi_{\ell\ell}}\xspace}
-\newcommand{\drll}{\ensuremath{\Delta R_{\ell\ell}}\xspace}
-\newcommand{\ptltwo}{\ensuremath{\pt^{\elll_{2}}}\xspace}
-\newcommand{\ptvecltwo}{\ensuremath{\ptvec^{\ell_{2}}}\xspace}
-\newcommand{\ttst}{\ensuremath{\ttbar\gamma{}+{}\PQt\PW}\xspace}
-\newcommand{\tautau}{\ensuremath{\PGtp{}\PGtm}\xspace}
+\newcommand{\mTH}{m_{\mathrm{T}}^{\PH}}
+\newcommand{\mTWW}{m_{\mathrm{T}}^{\PW\PW}}
+\newcommand{\ptvecll}{\ptvec^{\ell\ell}}
+\newcommand{\ptll}{\pt^{\ell\ell}}
+\newcommand{\dphill}{\Delta\phi_{\ell\ell}}
+\newcommand{\drll}{\Delta R_{\ell\ell}}
+\newcommand{\ptltwo}{\pt^{\ell_{2}}}
+\newcommand{\ptvecltwo}{\ptvec^{\ell_{2}}}
+\newcommand{\ttst}{\ttbar\gamma{}+{}\PQt\PW}
+\newcommand{\tautau}{\PGtp{}\PGtm}
 
 \cmsNoteHeader{SMP-22-006}
 
@@ -78,16 +78,16 @@ We select $\PW^+\PW^-\Pgg\to$ $\Pe^+\nu_{\Pe}\mu^-\overline{\nu}_{\mu}\Pgg$ and 
 One control region with same-sign leptons (the SS$\PW\PW\gamma$ CR) is defined to validate the nonprompt lepton background. Another control region dominated by events containing a top quark (the Top$\gamma$ CR) is used to validate both nonprompt lepton and photon backgrounds. These two CRs are then included in the simultaneous fit to constrain the estimates of these processes. The selection for the SS$\PW\PW\gamma$ CR is almost the same as the signal region selection except that the $\mTWW$ requirement is removed and the two leptons are required to have the same charge. The definition of the Top$\gamma$ CR also follows closely that of the signal region except that 
 at least one {\cPqb}-tagged jet with $\pt > 20\GeV$ is required and the $\mTWW$ requirement is removed. 
 
-The observed distributions of $\mTWW$ and the invariant mass of dilepton plus photon ($\mllg$) are compared with the expected distributions in \ref{fig:plots_WWgammarun2}. The experimental data agree with the prediction within uncertainties. The expected and observed numbers of events are listed in Table.~\ref{tab:yields}.
+The observed distributions of $\mTWW$ and the invariant mass of dilepton plus photon ($\mllg$) are compared with the expected distributions in \ref{fig:plots_WWgammarun2}. The experimental data agree with the prediction within uncertainties. The expected and observed numbers of events are listed in Table~\ref{tab:yields}.
 
-\begin{figure}[htp]
-    \begin{center}      
+\begin{figure*}[htp]
+     \centering      
       \includegraphics[width=0.48\textwidth]{unblind_SRCR/SR_prefit/can_mllg_emu.pdf}
       \includegraphics[width=0.48\textwidth]{unblind_SRCR/SR_prefit/can_mT_pf_emu.pdf}      
     \caption{The pre-fit distributions of the invariant mass of the $\PW\PW\Pgg$ system (left) and the transverse mass of the $\PW\PW$ system (right) after the signal region selection. The shaded band represents the statistical uncertainty.}
         \label{fig:plots_WWgammarun2}
-    \end{center}
-\end{figure}
+     
+\end{figure*}
 
 \begin{table}[!ht]
 \centering
@@ -114,15 +114,14 @@ Observed & 1330$\pm$26  & 263$\pm$16 & 3287$\pm$57 \\
 \label{tab:yields}
 \end{table}
 
-\begin{figure}[htp]
-    \begin{center}
-      
+\begin{figure*}[htp]
+     \centering      
       \includegraphics[width=0.48\textwidth]{unblind_SRCR/2D_fit/aa_0jetsrun2.pdf}
       \includegraphics[width=0.48\textwidth]{unblind_SRCR/2D_fit/aa_1morejetsrun2.pdf}
     \caption{The post-fit 2D $\mTWW$-$\mllg$ distributions used for the significance measurement. The data are compared to the signal and background in the predictions. The black points with error bars represent the data and their statistical+systematic uncertainties, whereas the hatched bands represent the total uncertainties of the predictions.}
         \label{fig:2dfitrun2}
-    \end{center}
-\end{figure}
+     
+\end{figure*}
 
 Various sources of systematic uncertainty are considered in the fit as nuisance parameters subject to log-normal constraints. Experimental sources of systematic uncertainty include the jet energy scale and resolution, which affect the $\ptvecmiss$, the lepton and photon identification efficiencies, the lepton trigger and b-tag efficiencies, the pileup modelling, the integrated luminosity measurement, the statistical power of our simulated samples and data control regions, and the nonprompt photon and nonprompt lepton background estimation methods. Theoretical sources of systematic uncertainty include the renormalization and factorization of QCD scales and PDFs. The renormalization and factorization of QCD scales are varied by factors of $2$ and $1/2$, excluding the (2,1/2) and (1/2,2) cases, and the envelope of these variations is taken as the uncertainty. The systematic uncertainty due to the PDFs is calculated using the members of the PDF4LHC15\_nnlo\_30\_pdfas PDF set following the PDF4LHC prescription for a Hessian PDF set~\cite{Butterworth_2016,Harland_Lang_2015,Ball_2015,PhysRevD.93.033006}. The uncertainties in the pileup modelling and the renormalization and factorization have the largest impact on the measurement.
 
