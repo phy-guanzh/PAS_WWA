@@ -1,2 +1,2 @@
-SMP-18-007 area:
-Zgamma vector boson scattering
+SMP-22-006 area:
+WWgamma production
